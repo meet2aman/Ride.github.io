@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Neonderthaw&family=Quintessential&display=swap');
+
+
+
+
+
+
+
+body{ 
+    margin:0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+    box-sizing: border-box;
+
+}
+
+h1,h2,h3,h4,p{
+    margin: 0;
+    padding: 0;
+}
+button{
+    transition: .5s ease;
+    cursor: pointer;
+    padding: 20px 20px;
+    font-family: inherit;
+    border: 0;
+    font-size: 1em;
+    background-color: none;
+    border: 1px solid #fff;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.hero{ 
+    padding-top: 400px;
+    background-color: #1c073e; 
+    height: 50vh;
+}
+.logo{
+    font-weight: 600;
+    font-size: 2.2em;
+    color: #fff;
+    margin-left: 77px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+nav{
+    color: #fff;
+    cursor: pointer;
+}
+ul{
+    margin: 0;
+    padding:0;
+    list-style:none;
+    transition:1s ease ;
+
+}
+li{
+    display: inline-block;
+    margin-right: 50px;
+    padding: 20px;
+}    
+span{
+    color: #ffd500;
+}
+h1{
+    font-family: inherit;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.6em;
+    margin: bottom 0.6em;
+    line-height: 1.3em;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+p{
+    font-size: 1em;
+    margin-bottom: 1em;
+    color: #fff;
+}
+.hero-content{
+    /* width: 30%; */
+    max-width: 370px;
+    position: absolute;
+    margin-left: 77px;
+    margin-top: -92px;
+    z-index: 1;
+}
+.btn-1{
+    background-color: #fff;
+    color: #1c073e;
+    margin-right: 1em;
+
+}
+.btn-2{
+    background-color: #1c073e;
+    color: #fff;
+}
+.span-1{
+    font-weight: 600;
+    color:#ffd500;
+}
+.span-2{
+    color: #ffd500;
+    font-weight: 600;
+}
+
+
+
+svg{
+    position: absolute;
+    left: 101px;
+    width: 93%;
+    height: 804px;
+    top: -9px;
+
+}
+.illustration{
+    display: flex;
+    overflow: hidden;
+    height: 50vh;
+    align-items:flex-end ;
+}
+.btn-1:hover{
+    background-color: transparent;
+    color: #fff;
+    box-shadow: 0 0 20px 0 rgba(248, 246, 100, 0.6);
+    transform: translateY(-10px);
+}
+.btn-1:hover > span{
+    color: yellowgreen;
+    transition:all 1s ease;
+    
+}
+.btn-2:hover{
+
+    background-color: #fff;
+    color: #1c073e;
+    transition:all ease 1s;
+    box-shadow: 0 0 20px 0 rgba(248, 246, 100, 0.6);
+    transform: translateY(-10px);
+}
+.btn-2:hover > span{
+    color: yellowgreen;
+    
+
+}
+li:hover{
+    color: yellow;
+    transition: 1s ease ;
+}
+
+.aman{
+   margin-top: 10px;
+   color: #fff;
+   font-weight: 400;
+
+}
+.aman span{
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+ /* font-family: 'Neonderthaw', cursive;  */
+/* font-family: 'Quintessential', cursive;  */
+}
+
+
+
+
+.change_content:after{
+	content: '';
+	animation: changetext 6s infinite linear;
+	color:  yellow;
+    animation-delay: 1.5s;
+}
+
+
+@keyframes changetext{
+	0%{content:"Get Seat.";}
+	50%{ content: "Get Drive."; }
+    100%{content: "Get Paid.";}
+    /* 60%{content: "Kerela";}
+    80%{content: "Delhi";}
+    100%{content: "Mumbai";}  */
+}
